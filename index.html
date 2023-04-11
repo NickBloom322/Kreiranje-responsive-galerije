@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+               
+        <title>Kreiranje responsive galerije</title>
+
+        <style>
+
+            body {
+                font-family: sans-serif;
+            }
+            .container {
+                max-width: 960px;
+                width: 90%;
+                margin: 20px auto;
+                display: grid;
+                grid-template-columns: repeat(5, 1fr);
+                grid-gap: 16px;
+                }
+                .tile {
+                    height: 100px;
+                    width: 150px;
+                    border-radius: 6px;
+                    background-color: rgb(80, 191, 255);
+                    background-image: url("image1.png");
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
+                }
+                
+                .tile-text{
+                    font-size: 16px;
+                    text-align:center;
+                    border:1px solid whitesmoke;
+                    background-color:whitesmoke;
+
+                }
+                p {
+                    width:944px;
+                    font-size: 19px;
+                    font-weight: lighter;
+                    margin: 20px auto;
+                    text-align:left;
+                    color:rgba(83, 82, 82, 0.993);
+                    overflow-wrap: normal;
+                }
+
+                @media screen and (max-width: 1024px) {
+                .container {
+                grid-template-columns: repeat(3, 1fr);
+                }
+                }
+
+                @media screen and (max-width: 768px) {
+                .container {
+                grid-template-columns: repeat(2, 1fr);
+                }
+                }
+
+                @media screen and (max-width: 414px) {
+                .container {
+                grid-template-columns: repeat(1, 1fr);
+                }
+                }
+
+                @media screen and (max-width: 1024px) {
+                p {
+                font-size: 18px;
+                }
+                }
+
+                @media screen and (max-width: 768px) {
+                p {
+                font-size: 17px;
+                }
+                }
+
+                @media screen and (max-width: 414px) {
+                p {
+                font-size: 16px;
+                }
+                }
+
+        </style>
+    </head>
+    <body>
+        
+
+        <div class="container">
+            <div class="tile">
+                <div class="tile-background"></div>
+                <div class="tile-text">Image Title</div>
+            </div>
+            <div class="tile">
+                <div class="tile-background"></div>
+                <div class="tile-text">Image Title</div>
+            </div>
+            <div class="tile">
+                <div class="tile-background"></div>
+                <div class="tile-text">Image Title</div>
+            </div>
+            <div class="tile">
+                <div class="tile-background"></div>
+                <div class="tile-text">Image Title</div>
+            </div>
+            <div class="tile">
+                <div class="tile-background"></div>
+                <div class="tile-text">Image Title</div>
+            </div>
+            <div class="tile">
+                <div class="tile-background"></div>
+                <div class="tile-text">Image Title</div>
+            </div>
+            <div class="tile">
+                <div class="tile-background"></div>
+                <div class="tile-text">Image Title</div>
+            </div>
+            <div class="tile">
+                <div class="tile-background"></div>
+                <div class="tile-text">Image Title</div>
+            </div>
+            <div class="tile">
+                <div class="tile-background"></div>
+                <div class="tile-text">Image Title</div>
+            </div>
+            <div class="tile">
+                <div class="tile-background"></div>
+                <div class="tile-text">Image Title</div>
+            </div>
+            
+        </div>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ullamcorper nunc a convallis aliquet.
+             Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla facilisi. Suspendisse luctus vestibulum scelerisque.
+              Duis sollicitudin orci eu mi rhoncus, vitae dictum odio sollicitudin. Nulla eget elit quis velit blandit consequat. 
+              Cras nec quam vitae enim feugiat tempus. Fusce tempor ligula in augue lobortis, sit amet varius augue luctus. 
+              Sed tempor ex ipsum. Nam a dui eleifend, imperdiet enim eget, lacinia purus.
+        </p>
+    </body>
+</html>
